@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuAC Group | Members</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <!-- Placeholder for Header -->
+  <div id="header"></div>
+
+  <!-- Main Content -->
+  <section class="page-section people-page">
+    <div class="page-content">
+
+
+      <h2 class="section-heading">Principal Investigator</h2>
+
+      <div class="people-profile-card">
+        
+        <div class="people-profile-image-wrap">
+          <img src="./assets/img/people/profile_sid_srivastava.jpg"
+               alt="Siddhartha Srivastava"
+               class="people-profile-image">
+        </div>
+
+        <div class="people-profile-text">
+
+
+          <h3>Siddhartha (Sid) Srivastava</h3>
+
+          <p>
+            Hi! My name is Siddhartha, and I go by Sid. I am an Assistant Professor in the Department of Aerospace Engineering at Auburn University, where I direct the QuAC group.
+          </p>
+          <p>
+            Before joining Auburn, I was a Senior Research Associate at the University of Southern California and an Assistant Research Scientist at the University of Michigan. I have conducted my post-doctoral studies under <a href="http://websites.umich.edu/~compphys/" target="_blank">Prof. Krishna Garikipati</a> in the <a href="https://sites.usc.edu/compphys/" target="_blank">Computational Physics Group</a> (now at University of Southern California) in the area of data-driven physics. I received my Ph.D. in Aerospace Engineering and M.S. in Mathematics from the University of Michigan, where I worked under <a href="https://aero.engin.umich.edu/people/sundararaghavan-veera/" target="_blank">Prof. Veera Sundararaghavan</a> on quantum algorithms and computational mechanics for near-term quantum hardware. I also received a B.Tech.-M.Tech. dual degree in Aerospace Engineering from the Indian Institute of Technology Kanpur, where I worked under <a href="https://home.iitk.ac.in/~shekhar/" target="_blank">Prof. Chandra Shekhar Upadhyay</a> on constitutive theories for highly deformable and dissipative materials.
+          </p>
+
+          <div class="profile-links people-links">
+            <a href="./assets/files/Sid_CV.pdf" target="_blank">
+              <i class="fa fa-address-card fa-lg"></i> CV
+            </a>
+
+            <a href="mailto:sidsriva@auburn.edu">
+              <i class="far fa-envelope-open fa-lg"></i> Mail
+            </a>
+
+            <a href="https://scholar.google.com/citations?hl=en&user=zLj-pQcAAAAJ" target="_blank">
+              <i class="fa-solid fa-book"></i> Scholar
+            </a>
+
+            <a href="https://github.com/sidsriva" target="_blank">
+              <i class="fab fa-github fa-lg"></i> Github
+            </a>
+
+            <a href="https://www.linkedin.com/in/sidsriva" target="_blank">
+              <i class="fab fa-linkedin fa-lg"></i> LinkedIn
+            </a>
+
+            <a href="https://orcid.org/0000-0002-4684-4423" target="_blank">
+              <i class="fab fa-orcid fa-lg"></i> ORCiD
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <h2 class="section-heading">Group Members</h2>
+
+      <div class="members-grid">
+
+        <div class="member-card">
+          <img src="./assets/img/people/profile_nirajan_gupta.png"
+          alt="Nirajan Gupta"
+          class="member-photo">
+          <h4>Nirajan Gupta</h4>
+          <p>PhD Student</p>
+          <p>Starting in Fall 2026</p>
+        </div>
+
+        <div class="member-card">
+          <img src="./assets/img/people/profile_jobait_alam.jpg"
+          alt="Nirajan Gupta"
+          class="member-photo">
+          <h4>Jobait Alam Jitu</h4>
+          <p>PhD Student</p>
+          <p>Starting in Fall 2026</p>
+        </div>
+
+        <!--
+
+        <div class="member-card">
+          <div class="member-photo-placeholder">Photo</div>
+          <h4>Undergraduate Student Name</h4>
+          <p>Undergraduate Student</p>
+          <p>Research area or short description.</p>
+        </div>
+      -->
+
+      </div>
+
+      <h2 class="section-heading">Visiting Scholars</h2>
+
+      <div class="members-grid">
+
+        <div class="member-card">
+          <img src="./assets/img/people/profile_mandy_joseph.jpeg"
+          alt="Mandy Joseph"
+          class="member-photo">
+          <h4>Mandy Joseph</h4>
+          <p>Undergraduate student at Stony Brook</p>
+          <p>Visiting REU student and Simons STEM Scholar</p>
+          <p>Research topic: Qauntum solvers for transport equation</p>
+        </div>
+        <!--
+
+        <div class="member-card">
+          <div class="member-photo-placeholder">Photo</div>
+          <h4>PhD Student Name</h4>
+          <p>PhD Student</p>
+          <p>Research area or short description.</p>
+        </div>
+
+        <div class="member-card">
+          <div class="member-photo-placeholder">Photo</div>
+          <h4>Undergraduate Student Name</h4>
+          <p>Undergraduate Student</p>
+          <p>Research area or short description.</p>
+        </div>
+        -->
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Placeholder for Footer -->
+  <div id="footer"></div>
+
+  <!-- Script to Load Header and Footer -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('header').innerHTML = data;
+        });
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('footer').innerHTML = data;
+        });
+    });
+  </script>
+
+</body>
+</html>

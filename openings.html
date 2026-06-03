@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuAC Group | Openings</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <!-- Placeholder for Header -->
+  <div id="header"></div>
+
+  <!-- Main Content -->
+  <section id="openings">
+    <div class="container">
+      <h2>Openings</h2>
+
+      <p>
+        The QuAC group welcomes motivated students interested in computational mechanics, scientific computing, quantum algorithms, and high-performance simulation. Our projects draw on applied mechanics, continuum physics, numerical methods, system inference, and emerging computing platforms. Students in the group are expected to develop both physical intuition and strong computational skills.
+      </p>
+
+      <p>
+        We are especially interested in students who enjoy building methods from first principles, testing them carefully, and deploying them on modern computing platforms. Prior experience in all areas listed below is not required, but curiosity, persistence, and a willingness to learn mathematical and computational tools are essential.
+      </p>
+
+      <div class="info-card" style="margin-top: 28px;">
+        <h3>Graduate Students</h3>
+        <p>
+          Graduate research in the QuAC group focuses on the development and analysis of computational methods for applied mechanics and continuum systems. Students are expected to work at the interface of mathematical modeling, algorithm design, and high-performance implementation.
+        </p>
+
+        <p>
+          Depending on the project, graduate students may work on quantum algorithms for PDE-based simulation, variational system identification, mean-field transport theories, quantum annealing formulations for mechanics, or scientific machine learning for physical systems. Across these directions, the emphasis is on understanding the structure of the underlying mechanics problem and using that structure to design better algorithms.
+        </p>
+
+        <p>
+          Graduate students are encouraged to develop depth in:
+        </p>
+
+        <ul><em>
+          <li>Mathematical analysis of numerical and learning-based methods for applied mechanics systems.</li>
+          <li>Weak formulations, variational methods, finite-element discretizations, and operator-based views of PDEs.</li>
+          <li>High-performance computing workflows on GPUs, clusters, and cloud platforms.</li>
+          <li>Numerical verification, benchmarking, reproducibility, and scientific software development.</li>
+        </ul></em>
+      </div>
+
+      <div class="info-card" style="margin-top: 28px;">
+        <h3>Undergraduate Students</h3>
+        <p>
+          Undergraduate researchers usually begin by contributing to code development, benchmarking, visualization, and simulation workflows. These projects are designed to build strong foundations in scientific programming while connecting directly to active research problems in the group.
+        </p>
+
+        <p>
+          Typical undergraduate projects may involve implementing numerical solvers, building simulation pipelines, testing quantum algorithms on small benchmark problems, generating reproducible figures, writing unit tests, containerizing codes, or deploying workflows on GPU and cluster systems.
+        </p>
+
+        <p>
+          We especially value students who are interested in learning how high-performance research codes are built, tested, documented, and deployed. Prior experience with mechanics or quantum computing is helpful but not necessary; strong programming habits and willingness to learn are more important.
+        </p>
+      </div>
+
+      <div class="info-card" style="margin-top: 28px;">
+        <h3>Useful Background and Tools</h3>
+        <p>
+          The following tools and topics frequently appear in QuAC projects. Students are not expected to know all of them before joining the group.
+        </p>
+
+        <div class="research-columns">
+          <div>
+            <h4>Quantum Computing</h4>
+            <ul>
+              <li>Qiskit</li>
+              <li>PennyLane</li>
+              <li>QuTiP</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Coding Practices</h4>
+            <ul>
+              <li>Parallel computing</li>
+              <li>Version control</li>
+              <li>Containerization</li>
+              <li>Unit testing and debugging</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>High-Performance Computing</h4>
+            <ul>
+              <li>GPU computing</li>
+              <li>Cluster computing</li>
+              <li>Cloud computing</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="research-columns" style="margin-top: 20px;">
+          <div>
+            <h4>Computational Mechanics</h4>
+            <ul>
+              <li>FEniCS</li>
+              <li>LAMMPS</li>
+              <li>PETSc</li>
+              <li>Trilinos</li>
+              <li>deal.II</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Machine Learning and AI</h4>
+            <ul>
+              <li>PyTorch</li>
+              <li>TensorFlow</li>
+              <li>Physics-informed learning</li>
+              <li>Scientific machine learning</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Applied Mathematics</h4>
+            <ul>
+              <li>Numerical methods for PDEs</li>
+              <li>Optimization and inference</li>
+              <li>Probability and stochastic processes</li>
+              <li>Continuum mechanics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card" style="margin-top: 28px;">
+        <h3>How to Reach Out</h3>
+        <p>
+          Interested students should send a short email describing their background, research interests, and relevant coursework or project experience. If possible, include a CV or resume and links to any code repositories, writing samples, or previous projects.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Placeholder for Footer -->
+  <div id="footer"></div>
+
+  <!-- Script to Load Header and Footer -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('header').innerHTML = data;
+        });
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('footer').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>

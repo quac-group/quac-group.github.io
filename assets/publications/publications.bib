@@ -1,0 +1,151 @@
+@misc{holber2026equivariantgraphneuralnetwork,
+      title={Equivariant graph neural network surrogates for predicting the properties of relaxed atomic configurations}, 
+      author={Jamie Holber and Siddhartha Srivastava and Krishna Garikipati},
+      year={2026},
+      eprint={2505.08121},
+      archivePrefix={arXiv},
+      primaryClass={cond-mat.mtrl-sci},
+      url={https://arxiv.org/abs/2505.08121},
+      doi={10.48550/arXiv.2505.08121}
+}
+
+
+@article{villacis2026tendons,
+title = {Constitutive parameter inference using physics-informed full volume inverse modeling of intact and torn rotator cuff tendons},
+journal = {Journal of the Mechanics and Physics of Solids},
+pages = {106668},
+year = {2026},
+issn = {0022-5096},
+doi = {10.1016/j.jmps.2026.106668},
+url = {https://www.sciencedirect.com/science/article/pii/S0022509626001699},
+author = {Carla Nathaly {Villacís Núñez} and Siddhartha Srivastava and Ulrich Scheven and Asheesh Bedi and Krishna Garikipati and Ellen M. Arruda},
+keywords = {biomechanics weak formulation, PDE-constrained optimization, variational system identification, soft tissue modeling, tendon hyperelasticity},
+abstract = {In this work, we characterized the material properties of an animal model of the rotator cuff tendon using full volume datasets of its intact and injured states. Unlike conventional approaches relying on surface strains or excised specimens, our framework leverages voxel-wise displacement data to infer constitutive behavior while preserving native architecture. Our experimental setup activated volumetric, tensile, and shear mechanisms given the tendon’s complex geometry. We implemented an approach to model inference termed variational system identification (VSI) to solve the weak form of the stress equilibrium equation using these full volume displacements, enabling identification of dominant deformation mechanisms. Three constitutive models were used for parameter inference: a neo-Hookean model, a modified Holzapfel-Gasser-Ogden (HGO) model with higher-order terms in the first and second invariants, and a reduced polynomial model based on the first, second, and fiber-related invariants. VSI-inferred parameters were further refined using an adjoint-based partial differential equation (PDE)-constrained optimization framework. The modified HGO model captures the tendon’s deformation mechanisms with reasonable accuracy, while the neo-Hookean model fails to reproduce key internal features, particularly the shear behavior in injured tendons. Surprisingly, the simplified polynomial model performs comparably to the modified HGO formulation using only three terms. These findings suggest that while current constitutive models do not fully replicate the complex internal mechanics of the tendon, they can capture key trends in intact and damaged tissue, using a homogeneous modeling approach. Continued model development is needed to bridge this gap and enable clinical-grade, predictive simulations of tendon injury and repair.}
+}
+
+@article{huang2026FPIRL,
+title = {FP-IRL: Fokker–Planck inverse reinforcement learning — A physics-constrained approach to Markov decision processes},
+journal = {Computer Methods in Applied Mechanics and Engineering},
+volume = {458},
+pages = {119010},
+year = {2026},
+issn = {0045-7825},
+doi = {10.1016/j.cma.2026.119010},
+url = {https://www.sciencedirect.com/science/article/pii/S0045782526002835},
+author = {Chengyang Huang and Siddhartha Srivastava and Kenneth K.Y. Ho and Kathryn E. Luker and Gary D. Luker and Xun Huan and Krishna Garikipati},
+keywords = {Partial differential equations, Stochastic differential equations, Free energy minimization, Physics-informed learning, Inverse modeling, Optimal transport},
+abstract = {Inverse reinforcement learning (IRL) is a powerful paradigm for uncovering the incentive structure that drives agent behavior, by inferring an unknown reward function from observed trajectories within a Markov decision process (MDP). However, most existing IRL methods require access to the transition function, either prescribed or estimated a priori, which poses significant challenges when the underlying dynamics are unknown, unobservable, or not easily sampled. We propose Fokker–Planck inverse reinforcement learning (FP-IRL), a novel physics-constrained IRL framework tailored for systems that can be described by Fokker–Planck (FP) dynamics. FP-IRL simultaneously infers both the reward and transition functions directly from trajectory data, without requiring access to sampled transitions. Our method leverages a correspondence between MDPs and the FP equation, linking reward maximization in MDPs with free energy minimization in FP dynamics. This connection enables inference of the FP potential function using our inference approach of variational system identification, from which the full set of MDP components — reward, transition, and policy — can be recovered using analytic expressions. We demonstrate the effectiveness of FP-IRL through experiments on synthetic benchmarks and a modified version of the Mountain Car problem. Our results show that FP-IRL achieves accurate recovery of agent incentives while preserving computational efficiency and physical interpretability.}
+}
+
+@article{livingston2025inferencephasefieldfracture,
+title = {Inference of phase field fracture models},
+journal = {Journal of the Mechanics and Physics of Solids},
+volume = {209},
+pages = {106495},
+year = {2026},
+issn = {0022-5096},
+doi = {10.1016/j.jmps.2025.106495},
+url = {https://www.sciencedirect.com/science/article/pii/S0022509625004697},
+author = {Elizabeth Livingston and Siddhartha Srivastava and Jamie Holber and Hashem M. Mourad and Krishna Garikipati},
+keywords = {System identification, Inverse problems, Optimization, Phase field fracture},
+abstract = {The phase field approach to modeling fracture uses a diffuse damage field to represent cracks. This representation mollifies singularities that arise in computations with sharp interface models and some of the resultant difficulties in the mathematical and numerical treatment of fracture. Phase field fracture models have proven effective at representing crack propagation, branching, and merging. Specific formulations, beginning with brittle fracture, have also been shown to converge to classical solutions. Extensions to cover the range of material failure, including ductile and cohesive fracture, lead to an array of possible models. There exists a large body of literature focusing on this class of models and on the impact of model form on the predicted crack evolution. However, there have not been systematic studies into how optimal models may be chosen. Here, we take a first step in this direction by developing formal methods for identification of the best parsimonious model of phase field fracture given full-field data on the damage and deformation fields. We consider some of the main models that have been used for the degradation of elastic response due to damage and its propagation. Our approach builds upon Variational System Identification (VSI), a weak form variant of the Sparse Identification of Nonlinear Dynamics (SINDy). In this first communication we focus on synthetically generated data but we also consider central issues associated with the use of experimental full-field data, such as data sparsity and noise.}
+}
+
+@article{srivastava2025inferenceweakformpartialdifferential,
+      title={Inference of weak-form partial differential equations describing migration and proliferation mechanisms in wound healing experiments on cancer cells}, 
+      author={Siddhartha Srivastava and Patrick C. Kinnunen and Zhenlin Wang and Kenneth K. Y. Ho and Brock A. Humphries and Siyi Chen and Jennifer J. Linderman and Gary D. Luker and Kathryn E. Luker and Krishna Garikipati},
+      year={2025},volume={21}, ISSN={1573-2924},  number={10}, pages={e1013607},journal={PLoS Comput Biol}, publisher={PLoS Comput Biol}, month=oct, DOI={10.1371/journal.pcbi.1013607},url={http://dx.doi.org/10.1371/journal.pcbi.1013607},}
+
+ @article{Folk_2024_1, title={Analytic Error Analysis of the Partial Derivatives Cross-Section Model—I: Derivation}, volume={198}, ISSN={1943-748X}, url={http://dx.doi.org/10.1080/00295639.2023.2288308}, DOI={10.1080/00295639.2023.2288308}, number={11}, journal={Nuclear Science and Engineering}, publisher={Informa UK Limited}, author={Folk, Thomas and Srivastava, Siddhartha and Price, Dean and Garikipati, Krishna and Kochunas, Brendan}, year={2024}, month=mar, pages={2080–2095} }
+
+ @article{Folk_2024_2, title={Analytic Error Analysis of the Partial Derivatives Cross-Section Model—II: Numerical Results}, volume={198}, ISSN={1943-748X}, url={http://dx.doi.org/10.1080/00295639.2024.2303544}, DOI={10.1080/00295639.2024.2303544}, number={11}, journal={Nuclear Science and Engineering}, publisher={Informa UK Limited}, author={Folk, Thomas and Srivastava, Siddhartha and Price, Dean and Garikipati, Krishna and Kochunas, Brendan}, year={2024}, month=feb, pages={2096–2119} }
+
+ @article{Srivastava_2024, title={Pattern formation in dense populations studied by inference of nonlinear diffusion‐reaction mechanisms}, volume={125}, ISSN={1097-0207}, url={http://dx.doi.org/10.1002/nme.7475}, DOI={10.1002/nme.7475}, number={12}, journal={International Journal for Numerical Methods in Engineering}, publisher={Wiley}, author={Srivastava, Siddhartha and Garikipati, Krishna}, year={2024}, month=mar }
+
+ @article{Kinnunen_2024, title={Integrating inverse reinforcement learning into data-driven mechanistic computational models: a novel paradigm to decode cancer cell heterogeneity}, volume={4}, ISSN={2674-0702}, url={http://dx.doi.org/10.3389/fsysb.2024.1333760}, DOI={10.3389/fsysb.2024.1333760}, journal={Frontiers in Systems Biology}, publisher={Frontiers Media SA}, author={Kinnunen, Patrick C. and Ho, Kenneth K. Y. and Srivastava, Siddhartha and Huang, Chengyang and Shen, Wanggang and Garikipati, Krishna and Luker, Gary D. and Banovic, Nikola and Huan, Xun and Linderman, Jennifer J. and Luker, Kathryn E.}, year={2024}, month=mar }
+
+ @article{Srivastava_2022, title={Bandgap optimization in combinatorial graphs with tailored ground states: application in quantum annealing}, volume={24}, ISSN={1573-2924}, url={http://dx.doi.org/10.1007/s11081-022-09758-9}, DOI={10.1007/s11081-022-09758-9}, number={3}, journal={Optimization and Engineering}, publisher={Springer Science and Business Media LLC}, author={Srivastava, Siddhartha and Sundararaghavan, Veera}, year={2022}, month=aug, pages={1931–1949} }
+
+ @article{Srivastava_2023, title={Generative and discriminative training of Boltzmann machine through quantum annealing}, volume={13}, ISSN={2045-2322}, url={http://dx.doi.org/10.1038/s41598-023-34652-4}, DOI={10.1038/s41598-023-34652-4}, number={1}, journal={Scientific Reports}, publisher={Springer Science and Business Media LLC}, author={Srivastava, Siddhartha and Sundararaghavan, Veera}, year={2023}, month=may }
+
+ @article{Ho_2023, title={Oscillatory ERK Signaling and Morphology Determine Heterogeneity of Breast Cancer Cell Chemotaxis via MEK-ERK and p38-MAPK Signaling Pathways}, volume={10}, ISSN={2306-5354}, url={http://dx.doi.org/10.3390/bioengineering10020269}, DOI={10.3390/bioengineering10020269}, number={2}, journal={Bioengineering}, publisher={MDPI AG}, author={Ho, Kenneth K. Y. and Srivastava, Siddhartha and Kinnunen, Patrick C. and Garikipati, Krishna and Luker, Gary D. and Luker, Kathryn E.}, year={2023}, month=feb, pages={269} }
+
+ @article{Nikolov_2022, title={Ogden material calibration via magnetic resonance cartography, parameter sensitivity and variational system identification}, volume={380}, ISSN={1471-2962}, url={http://dx.doi.org/10.1098/rsta.2021.0324}, DOI={10.1098/rsta.2021.0324}, number={2234}, journal={Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences}, publisher={The Royal Society}, author={Nikolov, Denislav P. and Srivastava, Siddhartha and Abeid, Bachir A. and Scheven, Ulrich M. and Arruda, Ellen M. and Garikipati, Krishna and Estrada, Jonathan B.}, year={2022}, month=aug }
+
+@article{Zhang_2022,
+	doi = {10.1016/j.commatsci.2022.111493},
+	url = {https://doi.org/10.1016%2Fj.commatsci.2022.111493},
+	year = 2022,
+	month = aug,
+	publisher = {Elsevier {BV}},
+	volume = {211},
+	pages = {111493},
+	author = {X. Zhang and G.H. Teichert and Z. Wang and M. Duschenes and S. Srivastava and E. Livingston and J. Holber and M. Faghih Shojaei and A. Sundararajan and K. Garikipati},
+	title = {{mechanoChemML}: A software library for machine learning in computational materials physics},
+	journal = {Computational Materials Science}
+}
+
+ @inproceedings{Price_2022, series={PHYSOR22}, title={Sensitivity Analysis of Homogenized Cross Sections in AP1000 Lattices}, url={http://dx.doi.org/10.13182/physor22-37383}, DOI={10.13182/physor22-37383}, booktitle={International Conference on Physics of Reactors 2022 (PHYSOR 2022)}, publisher={American Nuclear Society}, author={Price, Dean and Folk, Thomas and Srivastava, Siddhartha and Garikipati, Krishna and Kochunas, Brendan}, year={2022}, pages={1286–1295}, collection={PHYSOR22} }
+
+@article{Srivastava_2021,
+	doi = {10.1016/j.engfracmech.2020.107406},
+	url = {https://doi.org/10.1016%2Fj.engfracmech.2020.107406},
+	year = 2021,
+	month = jan,
+	publisher = {Elsevier {BV}},
+	volume = {241},
+	pages = {107406},
+	author = {Siddhartha Srivastava and Mohammadreza Yaghoobi and Veera Sundararaghavan},
+	title = {A graph-theoretic approach for multiscale modeling and prediction of crack propagation in polycrystalline materials},
+	journal = {Engineering Fracture Mechanics}
+}
+
+ @article{Acosta_2019, title={Primary and secondary pyroelectric effects in macro-fiber composites}, volume={177}, ISSN={1359-8368}, url={http://dx.doi.org/10.1016/j.compositesb.2019.107275}, DOI={10.1016/j.compositesb.2019.107275}, journal={Composites Part B: Engineering}, publisher={Elsevier BV}, author={Acosta, Krystal L. and Srivastava, Siddhartha and Wilkie, William K. and Inman, Daniel J.}, year={2019}, month=nov, pages={107275} }
+
+@article{Srivastava_2020, title={Graph Coloring Approach to Mesh Generation in Multiphase Media with Smooth Boundaries}, volume={58}, ISSN={1533-385X}, url={http://dx.doi.org/10.2514/1.j058357}, DOI={10.2514/1.j058357}, number={1}, journal={AIAA Journal}, publisher={American Institute of Aeronautics and Astronautics (AIAA)}, author={Srivastava, Siddhartha and Sundararaghavan, Veera}, year={2020}, month=jan, pages={198–205} }
+
+@article{Srivastava_2019, title={Box algorithm for the solution of differential equations on a quantum annealer}, volume={99}, ISSN={2469-9934}, url={http://dx.doi.org/10.1103/physreva.99.052355}, DOI={10.1103/physreva.99.052355}, number={5}, journal={Physical Review A}, publisher={American Physical Society (APS)}, author={Srivastava, Siddhartha and Sundararaghavan, Veera}, year={2019}, month=may }
+
+ @inproceedings{Srivastava_2019_mesh, title={An integer programming approach for mesh generation for polycrystals using the EBSD map}, url={http://dx.doi.org/10.2514/6.2019-0966}, DOI={10.2514/6.2019-0966}, booktitle={AIAA Scitech 2019 Forum}, publisher={American Institute of Aeronautics and Astronautics}, author={Srivastava, Siddhartha and Sundararaghavan, Veeraraghavan}, year={2019}, month=jan }
+
+@article{Srivastava2018,title = {Thermal conductivity of pillared graphene-epoxy nanocomposites using molecular dynamics},journal = {Applied Physics Letters},year = {2018},volume = {112},number = {15},issn = {0003-6951}, doi = {10.1063/1.5022755}, url = {https://doi.org/10.1063/1.5022755},author = {Lakshmanan, A. and Srivastava, S. and Ramazani, A. and Sundararaghavan, V.}},
+
+@article{Srivastava2017,title = {MicroFract: An image based code for microstructural crack path prediction},journal = {SoftwareX},year = {2017},volume = {6},pages = {94-97},issn = {2352-7110},doi = {10.1016/j.softx.2017.04.002},
+url = {https://www.sciencedirect.com/science/article/pii/S2352711017300092},author = {Sundararaghavan, Veera. and Srivastava, Siddhartha.}},
+
+@inproceedings{Srivastava2017aiaa,title = {Stochastic design optimization of microstructures with utilization of a linear solver},journal = {58th AIAA/ASCE/AHS/ASC Structures, Structural Dynamics, and Materials Conference, 2017},year = {2017},doi = {10.2514/6.2017-1939}, author = {Acar, Pinar. and Srivastava, Siddhartha. and Sundararaghavan, Veera.}},
+
+@article{Srivastava2017stochastic,title = {Stochastic design optimization of microstructures with utilization of a linear solver},journal = {AIAA Journal},year = {2017},volume = {55},number = {9},pages = {3161-3168}, doi={10.2514/1.J056000},author = {Acar, Pinar. and Srivastava, Srivastava. and Sundararaghavan, Veera.}}
+
+
+@article{graph_calc,
+title = {Numerical analysis of non-local calculus on finite weighted graphs, with application to reduced-order modeling of dynamical systems},
+journal = {Computer Methods in Applied Mechanics and Engineering},
+volume = {402},
+pages = {115513},
+year = {2022},
+note = {A Special Issue in Honor of the Lifetime Achievements of J. Tinsley Oden},
+issn = {0045-7825},
+doi = {10.1016/j.cma.2022.115513},
+url = {https://www.sciencedirect.com/science/article/pii/S0045782522005205},
+author = {M. Duschenes and S. Srivastava and K. Garikipati},
+keywords = {Non-local calculus, Graph-theoretic method, Reduced-order modeling, Numerical analysis, Gradient flow, Microstructure evolution},}
+
+@inproceedings{folk2022numerical,
+  title={Analytic error analysis of cross section interpolation methods in nodal diffusion codes-II: Numerical results},
+  author={Folk, T and Price, D and Kochunas, B and Srivastava, S and Garikipati, K},
+  booktitle={Proceedings of the international conference on physics of reactors-PHYSOR 2022},
+  pages={1292--1301},
+  year={2022},
+  doi       = {10.13182/PHYSOR22-37832},
+}
+
+@inproceedings{folk2022theory,
+  title={Analytic error analysis of cross section interpolation methods in nodal diffusion codes-I: Theory},
+  author={Folk, T and Price, D and Kochunas, B and Srivastava, S and Garikipati, K},
+  booktitle={Proceedings of the international conference on physics of reactors-PHYSOR 2022},
+  pages={1282--1291},
+  year={2022},
+  doi = {10.13182/PHYSOR22-37828},}
+}
+

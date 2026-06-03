@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuAC Group | Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <!-- Placeholder for Header -->
+  <div id="header"></div>
+
+  <!-- Main Content -->
+  <section id="hero" class="home-hero">
+    <div class="hero-content">
+      <h2>Welcome to the QuAC Group!</h2>
+      <p>
+        Applied mechanics provides a mathematical framework for understanding how complex physical behavior emerges across scales, from transport and wave propagation to deformation, instability, and collective dynamics in continuum systems. In the QuAC group, we are interested in developing quantum and scientific computing methods that assist in the formulation, simulation, and inference of these models. Our work draws on continuum mechanics, numerical analysis, differential geometry and information theory to design algorithms tailored to the structure of physical systems themselves.
+      </p>
+      <a href="research.html" class="btn">Explore Research</a>
+    </div>
+  </section>
+
+  <section id="home-overview" class="home-section">
+    <div class="home-grid">
+      <aside class="profile-card">
+        <h3>Principal Investigator</h3>
+        <img src="./assets/img/people/profile_sid_srivastava.jpg" alt="Siddhartha Srivastava" class="profile-image" style="max-width: 100%; width: 100%; height: auto; aspect-ratio: auto;">
+        <p class="profile-name">Siddhartha Srivastava</p>
+        <p>
+          Assistant Professor<br>
+          Department of Aerospace Engineering<br>
+          Auburn University
+        </p>
+        <p>
+          <a href="https://scholar.google.com/citations?hl=en&user=zLj-pQcAAAAJ" target="_blank" style="margin-right: 15px"><i class="fa-solid fa-book"></i> Scholar   </a>
+          <a href="https://github.com/sidsriva" target="_blank" style="margin-right: 15px"><i class="fab fa-github fa-lg"></i> Github</a><br>
+          <a href="https://www.linkedin.com/in/sidsriva" target="_blank" style="margin-right: 15px"><i class="fab fa-linkedin fa-lg"></i> LinkedIn</a>
+          <a href="https://orcid.org/0000-0002-4684-4423" target="_blank" style="margin-right: 15px"><i class="fab fa-orcid fa-lg"></i> ORCiD</a>
+        </p>
+        <a href="people.html" class="btn">Meet the group &rarr;</a>
+      </aside>
+
+      <div class="overview-main">
+        <div class="info-card">
+          <h3>Research Vision</h3>
+          <p>
+             Many physical systems possess rich underlying mathematical structure, including conservation laws, symmetries, geometric embedding, and thermodynamics constraints, that fundamentally govern their evolution and emergent behavior. Our research seeks to incorporate these structures directly into computational frameworks, both to improve physical fidelity and to specialize algorithmic performance for scientific applications. A central theme of our research is understanding whether these structured problems admit new pathways for quantum advantage in simulation, learning, optimization, and system identification for complex continuum systems.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <h3>Research Directions</h3>
+          <div class="research-columns">
+            <div>
+              <h4>Applied Mechanics &amp; Continuum Modeling</h4>
+              <ul>
+                <li>Computational solid mechanics</li>
+                <li>Transport-reaction systems</li>
+                <li>Multiphysics and multiscale modeling</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Scientific Learning &amp; Inference</h4>
+              <ul>
+                <li>Physics-informed machine learning</li>
+                <li>Variational system identification</li>
+                <li>Bayesian and uncertainty-aware modeling</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Quantum &amp; Post-Moore Computing</h4>
+              <ul>
+                <li>Quantum algorithms for scientific computing</li>
+                <li>Variational quantum methods</li>
+                <li>Algorithms for emerging hardware platforms</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="news-card">
+        <h3>Latest News</h3>
+        <div class="news-item">
+          <span class="news-date">June 2026</span>
+          <p>QuAC group website launched.</p>
+        </div>
+        <div class="news-item">
+          <span class="news-date">Fall 2025</span>
+          <p>Dr. Sid Srivastava joins Aerospace Department at Auburn University</p>
+        </div>
+        <div class="news-item">
+          <span class="news-date">Openings</span>
+          <p>Motivated students interested in computational mechanics, scientific machine learning, and quantum scientific computing are encouraged to reach out.</p>
+        </div>
+        <!--<a href="news.html" class="text-link">More news &rarr;</a>-->
+      </aside>
+    </div>
+  </section>
+
+  <!-- Placeholder for Footer -->
+  <div id="footer"></div>
+
+  <!-- Script to Load Header and Footer -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('header').innerHTML = data;
+        });
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('footer').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>

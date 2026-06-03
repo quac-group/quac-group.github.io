@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuAC Group | Research</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <!-- Placeholder for Header -->
+  <div id="header"></div>
+
+  <!-- Main Content -->
+    <section id="research">
+        <div class="container">
+            <h2>Our Research</h2>
+            <p>
+            The following problems provide a representative overview of the research directions currently pursued within the QuAC group. We are broadly interested in mathematical and computational challenges arising across applied mechanics, continuum physics, and scientific computing.
+            </p>  
+            <p>
+            <span style="font-weight: bold;">Quantum Algorithms for PDE-Based Transport and Continuum Simulation</span>
+            </p>
+
+            <p>
+            Many problems in continuum mechanics, transport, and multiscale physics are governed by partial differential equations whose discretizations give rise to large sparse operators with rich algebraic structure. Our work investigates how this structure can be leveraged in quantum algorithms for scientific computing, with particular emphasis on block-encoding methods and Quantum Singular Value Transformation (QSVT). We develop quantum solvers based on weak formulations of PDEs and design specialized quantum operators for simulation and system inference in continuum systems. A central theme of this work is understanding how sparsity, locality, variational structure, and conservation laws influence the construction of efficient quantum algorithms for PDE-based simulation.
+
+            We are particularly interested in:
+            <ul><em>
+            <li>Developing finite-element and weak-form discretizations compatible with block-encoding and Hamiltonian construction.</li>
+            <li>Designing resource-aware quantum circuits for PDE simulation.</li>
+            </ul></em>
+            </p>
+            <div style="text-align: center; margin: 24px 0;">
+                <img src="assets/img/research/quantum_qsvt_procedure.png" alt="Quantum Computation" class="img" width="60%" height="auto">
+            </div>
+                        <p>
+            <span style="font-weight: bold;">Quantum Annealing for Combinatorial Graph Formulations in Mechanics</span>
+            </p>
+            <p>
+            As conventional computing approaches the limits of transistor scaling and energy efficiency, scientific computing is increasingly exploring specialized post-Moore hardware. Within this landscape, quantum annealing provides a particularly natural platform for mechanics problems that can be expressed as structured combinatorial optimization tasks. 
+            Our work investigates how models from applied mechanics and computational physics can be reformulated so that their energetic, geometric, and topological structure is preserved in a discrete optimization setting. 
+            This perspective is especially relevant for multiphase media, including porous solids, polycrystalline materials, mixed-phase alloys, and fracture systems, where the physics is often governed by competition between surface and bulk energies. 
+            While such systems are commonly modeled using phase-field methods, the number of fields and admissible configurations can grow rapidly with the number of phases. Discrete formulations offer an alternative route, but require careful construction of surface measures, compatibility constraints, and physically meaningful interaction energies. 
+            We borrow ideas from graph theory and differential geometry to build graph-based representations of these mechanics problems and map them to combinatorial energy minimization forms, including QUBO and Ising-type formulations suitable for quantum annealing hardware such as the <em>D-Wave quantum annealer</em>. 
+            We are interested in understanding which physical structures and discrete formulations make mechanics problems naturally suited to annealing-based computation. The initial development of this research direction was carried out during PI Siddhartha Srivastava’s doctoral work under the supervision of <a href="https://aero.engin.umich.edu/people/sundararaghavan-veera/" target="_blank"><em>Prof. Veera Sundararaghavan</em></a> at the University of Michigan. We have since applied these ideas to problems in fracture mechanics, mesh generation, PDE discretizations, bandgap optimization in spinodal systems, and scientific machine learning. 
+            Some of the open problems in this area that are of current interest to the group:
+            <ul><em>
+                <li> Characterizing surface and bulk energies from experimental images of thermally induced grain growth in polycrystalline materials. </li>
+                <li> Training physics-based Machine learning models for fracture path prediction.</li>  
+            </ul></em>
+            <div style="text-align: center; margin: 24px 0;">
+                <img src="assets/img/research/graph_qa.png" alt="Adiabatic Computation" class="img" width="60%" height="auto">
+            </div>
+            </p>
+            <!--
+            <p>We develop computational models integrating physics and AI for aerospace materials.</p>
+            <div class="research-grid">
+                <div class="research-item">
+                    <h3>Computational Mechanics</h3>
+                    <p>Finite element methods, continuum modeling, and multiscale simulation.</p>
+                </div>
+                <div class="research-item">
+                    <h3>Scientific Machine Learning</h3>
+                    <p>Graph-based learning, neural operators, and ML for PDEs.</p>
+                </div>
+                <div class="research-item">
+                    <h3>Aerospace & Materials</h3>
+                    <p>Structural analysis, fracture modeling, and high-performance computing.</p>
+                </div>
+            </div>
+            -->
+            <p>
+            <span style="font-weight: bold;">Mean-Field Transport and Coarse-Grained Stochastic Dynamics</span>
+            </p>            
+            <p>
+              Many transport processes in biological, physical, and collective systems emerge from stochastic interactions between large populations of agents. Our work develops continuum-scale descriptions for such systems by coarse graining discrete stochastic dynamics into mean-field transport theories. Starting from interacting particle systems with collisions, compartment switching, and history-dependent transition mechanisms, we derive continuum descriptions in the form of Fokker–Planck equations, age-structured transport systems, delay differential equations, and advection–diffusion–reaction PDEs with memory effects.
+              A central theme of this work is understanding how microscopic interaction rules and stochastic transition laws generate emergent macroscopic transport behavior. We investigate systems in which agents evolve across multiple internal compartments, each governed by its own migration law, interaction kernel, or effective energy landscape. Stochastic switching between compartments can produce nonequilibrium continuum behavior, probability currents, and persistent transport even when the observed density fields appear stationary. These models naturally connect ideas from kinetic theory, optimal transport, gradient flows, branching processes, and nonequilibrium statistical physics.
+              This work is carried out in collaboration with <a href="https://sites.usc.edu/compphys/" target="_blank"><em>Prof. Krishna Garikipati</em></a>(University of Southern California), <a href="https://uq.engin.umich.edu/people/xun-huan/" target="_blank"><em>Prof. Xun Huan</em></a> (University of Michigan), and <em>Dr. Reese Jones</em> and <em>Dr. Cosmin Safta</em> at Sandia National Laboratories.
+              We are particularly interested in:
+              <ul><em>
+              <li>Developing inference frameworks for delayed transport and transport–reaction PDEs arising from stochastic interacting particle systems with memory and compartment transitions.</li>
+              <li>Understanding the emergent physics of delayed transport systems, including Turing-type instabilities in multicomponent delayed reaction–transport models.</li>
+              </ul></em>
+
+              <div style="text-align: center; margin: 24px 0;">
+                <img src="assets/img/research/transport.png" alt="Compartment models" class="img" width="55%" height="auto">
+            </div>
+            </p>
+            <p>
+            <span style="font-weight: bold;">Variational Inference of Physical Mechanisms in Continuum Systems</span>
+            </p>
+            <p>
+            Perhaps, one of the most touted challenges in computational physics in the past decade has been – ‘Infer the governing physics of the system from experimental data’, leading to the development of methods like manifold learning, SINDy, VSI, and many more. 
+            Most physical systems admit to a partial differential equations (PDE) model. 
+            The discovery of physical mechanisms, thus, involves finding the simplest PDE that explains the experimental data. 
+            We develop techniques at the intersection of finite element methods and data-driven optimization methods. 
+            These techniques, being based on the weak form of PDE, allow for minimal regularity constraint on the data as well as give a natural way of prescribing the boundary conditions necessary for emulating the experimental conditions. 
+            We apply these techniques to infer constitutive theories for soft matter and continuum-scale transport mechanisms in biological and physical systems. 
+            This research builds on the Variational System Identification (VSI) framework, originally developed by <a href="https://sites.usc.edu/compphys/" target="_blank"><em>Prof. Krishna Garikipati</em></a> and collaborators, and continues through collaborations with <a href="https://arrudagroup.engin.umich.edu/" target="_blank"><em>Prof. Ellen Arruda</em></a> at the University of Michigan and <a href="https://sites.usc.edu/compphys/" target="_blank"><em>Prof. Krishna Garikipati</em></a> at the University of Southern California.
+            These efforts have identified some critical open challenges in the field:
+            <ul><em>
+            <li>How can we design experiments that facilitate robust inference?</li>
+            <li>How to infer models when portions of the governing physics, state variables, or internal fields are partially observed or entirely unobserved?</li>
+            </ul></em>
+
+            <div style="text-align: center; margin: 24px 0;">
+                <img src="assets/img/research/vsi.png" alt="System Identification" class="img" width="60%" height="auto">
+            </div>
+
+            </p>
+            <!--
+            <p>
+            <span style="font-weight: bold;">Graph-theoretic Representations for Surrogate Modeling of Physical Systems</span>
+            </p>
+            <p>
+            A Neural network is a central element in most ML architectures like Deep Neural Networks, Autoencoders, GANS, etc., where it serves as a mathematical parameterization for any quantity of interest, much like the popular finite element or spectral basis interpolations. 
+            The power of Universal Approximation theorems and advancements in training methodologies have catapulted it into computational physics, leading to the development of new methods like Physics inspired Neural Networks (PINNs), Deep Operator Networks (DeepONet), and Kernel networks. 
+            However, designing ML methods for scientific computing requires treating unstructured data that may stem from constraints around data acquisition methods in the experimental setup. 
+            Additionally, the quantity of interest often involves the evaluation of differential operators. We have introduced Graph Calculus Neural Network that allows for differential interpolations for unstructured data and shown its relevance in modeling differential equations and free energies of physical systems. 
+            This method is based on one of our previous works where we analyzed <em>hp</em> convergence (in graph calculus) as is required in scientific computing settings. 
+            Graph Calculus Neural Network typically requires fewer trainable parameters than classical Neural Networks, making them amenable to mathematical analysis. 
+            We use this framework as a basis for the following research directions: 
+            <ul><em>
+                <li> Developing novel ML PDE solvers for fast solution of PDEs. </li>
+                <li> Developing surrogates for free energies of physical systems that are relevant for reduced order modeling in many mechanochemical systems.</li>  
+            </ul></em>
+            <div style="text-align: center; margin: 24px 0;">
+                <img src="assets/img/research/graph_calc.png" alt="Graph Calculus" class="img" width="70%" height="auto">
+            </div>
+            -->
+
+        </div>
+    </section>
+
+    <!-- Placeholder for Footer -->
+  <div id="footer"></div>
+
+  <!-- Script to Load Header and Footer -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('header').innerHTML = data;
+        });
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('footer').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>
