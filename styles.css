@@ -55,47 +55,33 @@ header {
     margin-right: 20px;
   }
   
-  /* Optional: ensure header text appears nicely */
-  .header-text h1,
-  .header-text h2 {
-    margin: 0;
-    text-align: center;
-  }
-
-  .header-text h1 {
-    font-size: 1.8em;
-  }
-
-  .header-text h2 {
-    font-size: 1.1em;
-    font-weight: 400;
-  }
-  
-  /* Style navigation as needed */
+  /* Navigation */
   nav ul {
     list-style: none;
     padding: 0;
+    margin: 12px 0 0 0;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
   }
-  
+
   nav ul li {
-    margin: 0 10px;
+    margin: 0;
   }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
+  nav ul li a {
+    display: inline-block;
     color: white;
     text-decoration: none;
-}
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+  }
+
+  nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.12);
+  }
 
 /* default text alignments */
 h1, h2 {
@@ -318,13 +304,34 @@ footer {
         padding: 10px;
     }
 
+    .header-container {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .logo img {
+        margin-right: 0;
+    }
+
     nav ul {
-        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 10px;
     }
 
     nav ul li {
         display: block;
-        margin: 10px 0;
+        margin: 0;
+    }
+
+    nav ul li a {
+        padding: 8px 12px;
+        border: 1px solid rgba(255, 255, 255, 0.20);
+        border-radius: 6px;
+        white-space: nowrap;
+        font-size: 0.95rem;
     }
 
     #hero {
