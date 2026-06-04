@@ -1,3 +1,15 @@
+.people-profile-card {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 36px;
+    align-items: start;
+    background: rgba(255, 255, 255, 0.96);
+    border-radius: 14px;
+    padding: 36px;
+    box-shadow: 0 12px 30px rgba(12, 35, 64, 0.10);
+    border-top: 4px solid #0C2340;
+    margin-bottom: 42px;
+}
 /* Global Styles */
 body {
     font-family: 'Source Sans Pro', sans-serif;
@@ -284,6 +296,27 @@ footer {
 }
 
 /* Responsive Design for Mobile */
+@media screen and (max-width: 900px) {
+    .people-profile-card {
+        grid-template-columns: 1fr;
+        padding: 28px;
+    }
+
+    .people-profile-image-wrap {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .people-profile-image {
+        max-width: 240px;
+    }
+
+    .people-links {
+        grid-template-columns: 1fr 1fr;
+        max-width: 100%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .container {
         width: 95%; /* Allow more width on small screens */
@@ -302,15 +335,39 @@ footer {
     header {
         text-align: center;
         padding: 10px;
+        overflow-x: hidden;
     }
 
     .header-container {
         flex-direction: column;
         gap: 12px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 12px 16px;
     }
 
     .logo img {
-        margin-right: 0;
+        max-width: 90vw;
+        height: auto;
+        margin: 0 auto 12px auto;
+        display: block;
+    }
+
+    .header-text h1 {
+        font-size: 1.8rem;
+        line-height: 1.2;
+        max-width: 90vw;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .header-text h2 {
+        font-size: 1rem;
+        line-height: 1.25;
+        max-width: 90vw;
+        margin: 6px auto 0 auto;
+        text-align: center;
     }
 
     nav ul {
@@ -318,7 +375,9 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
         gap: 8px;
-        margin-top: 10px;
+        margin: 10px auto 0 auto;
+        width: 100%;
+        max-width: 90vw;
     }
 
     nav ul li {
@@ -327,24 +386,28 @@ footer {
     }
 
     nav ul li a {
-        padding: 8px 12px;
+        padding: 8px 10px;
         border: 1px solid rgba(255, 255, 255, 0.20);
         border-radius: 6px;
         white-space: nowrap;
-        font-size: 0.95rem;
+        font-size: 0.9rem;
     }
 
     #hero {
-        padding: 40px 18px;
+        padding: 36px 16px;
         background: #F5F5F5;
     }
 
     .hero-content {
-        padding: 24px;
+        width: auto;
+        max-width: 100%;
+        padding: 26px 22px;
+        box-sizing: border-box;
     }
 
     .hero-content h2 {
-        font-size: 1.7em;
+        font-size: 1.65rem;
+        line-height: 1.2;
     }
 
     .home-section {
@@ -406,7 +469,7 @@ footer {
 
 .people-profile-card {
     display: grid;
-    grid-template-columns: 240px 1fr;
+    grid-template-columns: 240px minmax(0, 1fr);
     gap: 36px;
     align-items: start;
     background: rgba(255, 255, 255, 0.96);
@@ -415,24 +478,16 @@ footer {
     box-shadow: 0 12px 30px rgba(12, 35, 64, 0.10);
     border-top: 4px solid #0C2340;
     margin-bottom: 42px;
+    overflow: hidden;
 }
 
-.people-profile-image {
-    width: 100%;
-    max-width: 220px;
-    height: auto;
-    border-radius: 12px;
-    display: block;
-    margin: 0 auto;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-    object-fit: contain;
+.people-profile-text {
+    min-width: 0;
 }
 
-.people-profile-image-wrap {
-    width: 220px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+.people-profile-text p {
+    overflow-wrap: break-word;
+    word-break: normal;
 }
 
 .people-profile-text h3 {
@@ -473,7 +528,7 @@ footer {
 }
 
 .people-links {
-    grid-template-columns: repeat(3, minmax(110px, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     max-width: 520px;
     margin-top: 18px;
 }
@@ -568,4 +623,63 @@ footer {
 
 .bibtex-toggle:hover {
   color: #E87722;
+}
+
+.bibtex-toggle:hover {
+  color: #E87722;
+}
+
+/* Final responsive overrides for very narrow screens */
+@media screen and (max-width: 900px) {
+    .people-profile-card {
+        display: grid;
+        grid-template-columns: 1fr !important;
+        gap: 24px;
+        padding: 28px;
+        overflow: visible;
+    }
+
+    .people-profile-image-wrap {
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+    }
+
+    .people-profile-image {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .people-profile-text {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .people-profile-text h3,
+    .people-profile-text h4,
+    .people-profile-text p {
+        text-align: left;
+        overflow-wrap: break-word;
+    }
+
+    .people-links {
+        grid-template-columns: 1fr 1fr;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .people-profile-card {
+        padding: 22px;
+    }
+
+    .people-profile-image {
+        max-width: 240px;
+    }
+
+    .people-links {
+        grid-template-columns: 1fr;
+    }
 }
